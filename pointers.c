@@ -12,7 +12,14 @@ int* ptrX = &x;
 
 // %p is the format specifier for pointers , by default it is in hexadecimal.
 
-
+->  TYPES OF POINTERS : 
+            1. VOID POINTERS :
+                ->  IT IS A POINTER THAT HAS NO DATA TYPE ASSOCIATED TO IT.
+                ->  IT CAN BE EASILY TYPECASTED TO ANY OTHER POINTER TYPE.
+                ->  
+            2. NULL POINTERS :
+            3. DANGLING POINTERS : 
+            4. WILD POINTERS : 
 */
 
 int main(int argc, char const *argv[])

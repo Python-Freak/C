@@ -11,3 +11,4 @@
 # Dependency directories (remove the comment below to include it)
 runFilesForC/
 .DS_Store
+.vscode/
