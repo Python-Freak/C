@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "supportlib.h": "c",
+        "stdlib.h": "c",
+        "math.h": "c"
+    }
+}
