@@ -1,0 +1,74 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+
+/*
+BEHIND THE SCENES : 
+    1. PREPROCESSING
+            1.  REMOVAL OF COMMENTS
+            2.  EXPANSION OF MACROS
+            3.  EXPANSION OF INCLUDE FILES
+
+    2. COMPILATION
+            ASSEMBLY LEVEL INSTRUCTIONS ARE GENERATED
+
+    3. ASSEMBLY
+            ->  .O OR .EXE ARE FORMED
+            ->  PRINTF ARE NOT RESOLVED
+            ->  ASSEMBLY LEVEL INSTRUCTIONS ARE CONVERTED TO MACHHINE CODE.
+ 
+    4. LINKING
+            ->  LINKS THE FUNCTIION IMPLEMENTATIONS
+
+WHAT IS A PREPROCESSOR ? 
+    ->  C PREPROCESSOR COMES UNDER ACTION BEFORE THE ACTUAL COMPILATION PROCESS
+    ->  C PREPROCESSOR IS NOT A PART OF A COMPILER
+    ->  IT IS A TEXT SUBSTITUTION TOOL
+    ->  ALL PREPROCESSORS START WITH A HASH SYMBOL ( # ).
+
+    EXAMPLES : 
+        1.  #define
+        2.  #include
+        3.  #undef
+        4.  #ifdef
+        5.  #ifndef
+        6.  #if
+        7.  #else
+        8.  #elif
+        9.  #pragma
+
+1.  #include DIRECTIVE :
+        -   IT CAUSES THE PREPROCESSOR TO FETCH THE CONTENTS OF SOME 
+            OTHER FILE TO BE INCLUDED IN THE CURRENT FILE.
+        -   THIS FILE MAY IN TURN #include SOME OTHER FILE WHICH MAY 
+            IN TURN DO THE SAME. 
+        -   MOST COMMONLY THEY HAVE A ".h" EXTENSION ,INDICATING THAT
+            THEY ARE HEADER FILE.
+        TWO FORMATS OF #include :
+            1.  #include <headerFile.h> -> SAYS TO LOOK IN STANDARD SYSTEM LIBRARIES
+            2.  #include "myFile.h" -> SAYS TO LOOK IN CURRENT DIRECTORY
+
+2. #define DIRECTIVE : 
+        -   IT IS USED TO DEFINE PREPROCESSOR VARIABLES
+        -   IT IS USED TO GLOBALLY REPLACE A WORD WITH A NUMBER
+        -   IT CAN BE USED FOR DEBUGGING, WE CAN HAVE PRINTING STATEMENTS THAT WE ONLY WANT
+            ACTIVE WHEN DEBUGGING, WE CAN PROTECT THEM WITH IFDEF IF WE WANT
+
+        EXAMPLES :   
+            #define PI 3.14159
+            #define square(x) x*x; <- MACROS, EVALUATED JUST LIKE FUNCTIONS
+
+PREDEFFINED MACROS IN C : 
+    1.  __DATE__ :  "MMM DD YYYY" FORMAT
+    2.  __TIME__ :  "HH:MM:SS" FORMAT
+    3.  __FILE__ :  CURRENT FILENAME AS A STRING LITERAL
+    4.  __LINE__ :  CURRENT LINE NUMBER AS DECIMAL CONSTANT
+    5.  __STDC__ :  DEFINED AS 1 WHEN THE COMPILER COMPILES WITH ANSI STANDARD
+    
+*/
+
+int main() {
+    //CODE HERE 
+    return 0;
+}
